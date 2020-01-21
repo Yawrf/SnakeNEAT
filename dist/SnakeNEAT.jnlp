@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SnakeNEAT.jnlp">
+  <information>
+    <title>SnakeNEAT</title>
+    <vendor>rewil</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SnakeNEAT.jar" size="16469" download="eager" />
+    <jar href="lib\NEAT.jar" size="49616" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="SnakeNEAT" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="snakeneat.SnakeNEAT"  name="SnakeNEAT" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="824.0" prefWidth="1420.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="snakeneat.FXMLDocumentController">
+   <children>
+      <Button layoutX="815.0" layoutY="520.0" mnemonicParsing="false" onAction="#playGame" prefHeight="43.0" prefWidth="146.0" text="Play Game" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="815.0" layoutY="567.0" mnemonicParsing="false" onAction="#prepareGeneration" prefHeight="55.0" prefWidth="146.0" text="Prepare Generation" textAlignment="CENTER" wrapText="true" />
+      <Label fx:id="lblScore" alignment="CENTER" layoutX="836.0" layoutY="728.0" prefHeight="21.0" prefWidth="104.0" text="0" textAlignment="CENTER" />
+      <Label layoutX="868.0" layoutY="707.0" text="Score:" />
+      <Button layoutX="815.0" layoutY="648.0" mnemonicParsing="false" onAction="#playGenerations" prefHeight="43.0" prefWidth="146.0" text="Play Generations" textAlignment="CENTER" wrapText="true" />
+      <TextField fx:id="fieldGenCount" layoutX="961.0" layoutY="654.0" prefHeight="31.0" prefWidth="77.0" promptText="1" />
+      <Label layoutX="850.0" layoutY="747.0" text="High Score:" />
+      <Label fx:id="lblHighScore" alignment="CENTER" layoutX="836.0" layoutY="773.0" prefHeight="21.0" prefWidth="104.0" text="0" textAlignment="CENTER" />
+      <Pane layoutX="12.0" layoutY="12.0" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: lightgray;">
+         <children>
+            <Canvas fx:id="canvas" height="800.0" width="800.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="815.0" layoutY="12.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: lightgray;">
+         <children>
+            <Canvas fx:id="canvasGenome" height="500.0" width="600.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
